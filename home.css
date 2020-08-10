@@ -157,11 +157,15 @@ body {
   color: #3a9ccb;
   font-weight: bold;
 }
-.feeling_icon {
+.feeling_icon,
+.bar_arrow {
   color: gray;
 }
 .feeling_kr {
   font-weight: 200;
+}
+.bar_his {
+  color: #3a9ccb;
 }
 .inner_center_bar {
   width: 170px;
@@ -226,17 +230,27 @@ body {
   margin-bottom: 20px;
 }
 .main_Rin_top {
-  /*position: absolute;
-  top: 18px;
-  left: 10px;*/
+  width: 465px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.main_Rin_top_text {
   font-size: 20px;
 }
-.main_Rin_stotyroom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+.main_Rin_top_domain{
+  font-size: 13px;
+  color: rgb(73, 73, 73);
+  text-decoration: none;
+  cursor: pointer;
 }
+.main_Rin_comment {
+  width: 452px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 /*.ma
 .in_outer {
   margin: 30px;
