@@ -123,12 +123,59 @@ body {
 }
 .main_Lin {
   width: 220px;
-  height: 522px;
+  height: 512px;
   margin: 5px;
+  padding-top: 5px;
   border-radius: 10px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todayNum {
+  color: red;
+}
+.inner_Lbox {
+  width: 180px;
+  height: 442px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.inner_Lbox_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feeling_eng {
+  color: #3a9ccb;
+  font-weight: bold;
+}
+.feeling_icon {
+  color: gray;
+}
+.feeling_kr {
+  font-weight: 200;
+}
+.inner_center_bar {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px black;
+  margin-bottom: 10px;
+}
+.inner_Lbox_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .main_right {
   width: 512px;
@@ -147,15 +194,51 @@ body {
   border-left: none;
 }
 .main_Rin {
-  width: 492px;
-  height: 522px;
+  position: relative;
+  width: 482px;
+  height: 501px;
   margin: 5px 5px 5px 0;
+  padding-top: 16px;
+  padding-left: 10px;
   border-radius: 10px;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start
+  align-items: flex-start;
 }
-/*.main_outer {
+.inner_Rbox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 452px;
+  height: 444px;
+  background-color: white;
+ 
+}
+.main_Rin_stotyroom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.main_Rin_top {
+  /*position: absolute;
+  top: 18px;
+  left: 10px;*/
+  font-size: 20px;
+}
+.main_Rin_stotyroom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+/*.ma
+.in_outer {
   margin: 30px;
   padding: 20px;
   width: 752px;
