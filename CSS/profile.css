@@ -1,24 +1,22 @@
+.center_sort {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .profile_box {
   position: relative;
   overflow: auto;
   width: 452px;
   height: 441px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .profile_content {
   width: 452px;
   position: absolute;
   top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .first_profile_name {
-  text-align: center;
   font-size: 40px;
   margin-bottom: 30px;
 }
@@ -29,31 +27,43 @@
   align-items: center;
 }
 
-.imo_two:hover + img,
-.imo_two:first-of-type {
-  transform: translateX(110px);
+.imo_two:hover ~ .right {
   transform: translateX(-110px);
 }
 
-.left:hover {
+.left {
   transform: translateX(110px);
 }
 .right:hover {
   transform: translateX(-110px);
 }
-
-/*
+.hobby_one {
+  color: red;
+  font-size: 30px;
+}
+.imo_img {
+  margin-bottom: 50px;
+  animation: imo_motion 1.5s ease-in-out infinite;
+}
 @keyframes imo_motion {
   0% {
-    transform: none;
+    transform: scale(0.8);
+    border-radius: 50%;
+    box-shadow: 2px 10px 15px 0px rgba(248, 77, 77, 0.5);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    border-radius: 50%;
+    box-shadow: 2px 10px 15px -5px rgba(248, 77, 77, 0.5);
   }
+
   100% {
-    transform: none;
+    transform: scale(0.8);
+    border-radius: 50%;
+    box-shadow: 2px 10px 15px 0px rgba(248, 77, 77, 0.5);
   }
 }
+/*
 .left {
   animation: airpod_left 5s ease-in-out forwards;
 }
