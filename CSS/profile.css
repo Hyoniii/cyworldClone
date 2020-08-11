@@ -1,0 +1,78 @@
+.profile_box {
+  position: relative;
+  overflow: auto;
+  width: 452px;
+  height: 441px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile_content {
+  width: 452px;
+  position: absolute;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first_profile_name {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.second_profile {
+  display: flex;
+  width: 452px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imo_two:hover + img,
+.imo_two:first-of-type {
+  transform: translateX(110px);
+  transform: translateX(-110px);
+}
+
+.left:hover {
+  transform: translateX(110px);
+}
+.right:hover {
+  transform: translateX(-110px);
+}
+
+/*
+@keyframes imo_motion {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}
+.left {
+  animation: airpod_left 5s ease-in-out forwards;
+}
+@keyframes airpod_left {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(110px);
+  }
+}
+.right {
+  animation: airpod_right 5s ease-in-out forwards;
+}
+@keyframes airpod_right {
+  0% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(-110px);
+  }
+}*/
