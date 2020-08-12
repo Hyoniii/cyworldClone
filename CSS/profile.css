@@ -303,8 +303,7 @@
   -webkit-animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-
-  animation-delay: 0.9s;
+  animation-delay: 1.5s;
 }
 @keyframes tracking-in-expand-fwd-top {
   0% {
@@ -353,6 +352,25 @@
   color: rgb(0, 0, 0) (32, 30, 30);
   font-size: 20px;
   margin-bottom: 40px;
+}
+.second_profile:hover > .hobby_one {
+  -webkit-animation: tracking-in-expand-fwd 4s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking_name 4s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation-delay: 2s;
+}
+.hobby_two_textone {
+  margin-top: 90px;
+  font-size: 30px;
+}
+.second_profile:hover > .hobby_two_textone {
+  -webkit-animation: tracking-in-expand-fwd 4s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking_name 4s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation-delay: 3s;
+}
+.hobby_two_img {
+  opacity: 0;
 }
 .third_profile:hover > .hobby_two_img {
   animation: netflix 3s ease-in-out forwards;
