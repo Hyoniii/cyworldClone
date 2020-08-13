@@ -143,6 +143,12 @@ body {
 .todayNum {
   color: red;
 }
+.home_inner_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .inner_Lbox {
   overflow: auto;
   width: 180px;
@@ -151,10 +157,7 @@ body {
   border-radius: 10px;
   border: solid 0.2px rgb(129, 127, 127);
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  
 }
 .inner_Lbox_top {
   display: flex;
