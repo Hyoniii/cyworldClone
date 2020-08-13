@@ -22,8 +22,13 @@
   list-style: none;
   padding-left: 0;
 }
-.profile_list > * {
+.profile_list > li > a {
   padding-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+.li_one {
+  font-weight: bold;
 }
 .profile_main_location {
   width: 452px;
@@ -411,7 +416,7 @@
   margin-top: 30px;
 }
 .third_profile {
-  height: 480px;
+  height: 650px;
 }
 .third_profile:hover > .hobby_two_img {
   animation: netflix 3s ease-in-out forwards;
@@ -454,19 +459,19 @@
 }
 .dental_carver {
   position: absolute;
-  top: -50px;
+  top: 50px;
   left: -170px;
 }
 .fourth_profile:hover > .fourth_profile_dental > .dental_before {
-  -webkit-animation: focus-in-expand-fwd-out 6s
+  -webkit-animation: focus-in-expand-fwd-out 5s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: focus-in-expand-fwd-out 6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  animation: focus-in-expand-fwd-out 5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation-delay: 2s;
 }
 .fourth_profile:hover > .fourth_profile_dental > .dental_carver {
-  animation: carver_left 4s linear forwards;
-  animation-delay: 2.5s;
+  animation: carver_left 2s linear forwards;
+  animation-delay: 3s;
 }
 @keyframes focus-in-expand-fwd-out {
   0% {
@@ -507,7 +512,7 @@
   -webkit-animation: swing-top-fwd 01.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: swing-top-fwd 01.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 6s;
+  animation-delay: 7s;
 }
 @keyframes text-pop-up-top {
   0% {
@@ -529,6 +534,11 @@
     opacity: 1;
   }
 }
+.fourth_profile:hover > .fourth_profile_dental > .dental_text {
+  -webkit-animation: focus-in-expand-fwd 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand-fwd 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 @keyframes swing-top-fwd {
   0% {
     opacity: 0;
@@ -547,8 +557,8 @@
 }
 
 .dental_text {
-  margin-top: 30px;
-  font-size: 25px;
+  margin-bottom: 50px;
+  font-size: 15px;
   opacity: 0;
 }
 .fourth_profile_dev {
@@ -577,14 +587,16 @@
     opacity: 1;
   }
 }
-.dental_text:hover {
-  -webkit-animation: tracking-in-contract-bck 3s
+/*
+.third_profile:hover > .dental_text {
+  -webkit-animation: tracking-in-contract-bck 2s
     cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-contract-bck 3s cubic-bezier(0.215, 0.61, 0.355, 1)
+  animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.61, 0.355, 1)
     both;
-  animation-delay: 2s;
-}
+  animation-delay: 4s;
+}*/
 .dev_text {
+  margin-top: 80px;
   opacity: 0;
 }
 .fourth_profile_dev:hover > .dev_text {
