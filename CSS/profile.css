@@ -512,7 +512,7 @@
   -webkit-animation: swing-top-fwd 01.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: swing-top-fwd 01.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 7s;
+  animation-delay: 5s;
 }
 @keyframes text-pop-up-top {
   0% {
@@ -528,9 +528,9 @@
     transform: translateY(-50px);
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
-      0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
-      0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 #ffff33, 0 2px 0 #ffff33, 0 3px 0 #ffff33,
+      0 4px 0 #ffff33, 0 5px 0 #ffff33, 0 6px 0 #ffff33, 0 7px 0 #ffff33,
+      0 8px 0 #ffff33, 0 9px 0 #ffff33, 0 50px 30px rgba(255, 0, 0, 0.664);
     opacity: 1;
   }
 }
@@ -596,12 +596,88 @@
   animation-delay: 4s;
 }*/
 .dev_text {
+  width: 430px;
   margin-top: 80px;
   opacity: 0;
 }
 .fourth_profile_dev:hover > .dev_text {
-  -webkit-animation: tracking-in-contract-bck 1s
-    cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+  -webkit-animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
+  animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  animation-delay: 1s;
+}
+.dev_img {
+  margin-bottom: 140px;
+}
+.fourth_profile_dev:hover > .dev_img {
+  opacity: 1;
+  -webkit-animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  animation-delay: 3s;
+}
+.dev_content {
+  display: flex;
+  flex-direction: column;
+}
+.dev_content_one {
+  font-size: 18px;
+}
+.dev_content_four,
+.dev_content_two {
+  font-size: 20px;
+}
+.sizeone {
+  font-size: 25px;
+}
+.dev_content_thr {
+  font-size: 50px;
+}
+.dev_content_five {
+  font-size: 40px;
+}
+.final_img {
+  margin-top: 100px;
+}
+.fourth_profile_dev:hover > .final_img {
+  -webkit-animation: text-pop-up-top 1.5s ease-in-out both;
+  animation: text-pop-up-top 1.5s ease-in-out both;
+  animation-delay: 8s;
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
 }
