@@ -1,5 +1,7 @@
 
 @import "./profile.css";
+@import "./keyword.css"
+
 
 body {
   height: 100%;
@@ -284,7 +286,7 @@ body {
   
   background-color: #368FB2
 }
-.cliked {
+.clicked {
   background-color: #f0f0f0;
 }
 .nav_bar a{
