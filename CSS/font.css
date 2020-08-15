@@ -1,0 +1,36 @@
+.first_profile_name {
+  font-family: "Nanum Myeongjo", "Do Hyeon", "Oswald";
+  font-size: 42px;
+}
+.content_form {
+  font-family: "Nanum Myeongjo";
+  font-size: 50px;
+}
+
+.content_etc {
+  font-family: "Do Hyeon", "Oswald";
+  font-size: 22px;
+}
+.answer_age {
+  font-size: 90px;
+}
+.hobby_two_textone {
+  font-size: 30px;
+}
+.dev_content_one {
+  font-size: 18px;
+}
+.dev_content_four,
+.dev_content_two {
+  font-size: 20px;
+}
+.sizeone {
+  font-size: 25px;
+}
+.dev_content_thr {
+  font-size: 50px;
+  text-decoration: underline;
+}
+.dev_content_five {
+  font-size: 40px;
+}

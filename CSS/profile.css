@@ -62,7 +62,7 @@
     box-shadow: 2px 5px 5px 0px rgba(95, 95, 95, 0.5);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.4);
     border-radius: 50%;
     box-shadow: 2px 5px 5px -5px rgba(95, 95, 95, 0.5);
   }
@@ -74,10 +74,9 @@
   }
 }
 .first_profile_name {
-  font-size: 40px;
-  -webkit-animation: tracking-in-expand-fwd 4s
+  -webkit-animation: tracking-in-expand-fwd 3s
     cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking_name 4s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking_name 3s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 .first_profile_content {
@@ -403,7 +402,7 @@
 }*/
 .hobby_one {
   color: rgb(0, 0, 0) (32, 30, 30);
-  font-size: 20px;
+
   margin-bottom: 40px;
 }
 .second_profile:hover > .hobby_one {
@@ -414,7 +413,6 @@
 }
 .hobby_two_textone {
   margin-top: 90px;
-  font-size: 30px;
 }
 .second_profile:hover > .hobby_two_textone {
   -webkit-animation: tracking-in-expand-fwd 2.5s
@@ -428,7 +426,6 @@
   opacity: 0;
 }
 .hobby_two_texttwo {
-  font-size: 20px;
   margin-top: 30px;
 }
 .third_profile {
@@ -460,7 +457,6 @@
   opacity: 1;
 }
 .form_story {
-  font-size: 50px;
   opacity: 0;
 }
 .fourth_profile:hover > .form_story {
@@ -479,7 +475,7 @@
 }
 .dental_carver {
   position: absolute;
-  top: 50px;
+  top: 70px;
   left: -170px;
 }
 .fourth_profile:hover > .fourth_profile_dental > .dental_before {
@@ -591,7 +587,6 @@
 .dental_text,
 .dental_texttwo {
   margin-bottom: 50px;
-  font-size: 15px;
   opacity: 0;
 }
 .dental_textthr {
@@ -668,22 +663,7 @@
   display: flex;
   flex-direction: column;
 }
-.dev_content_one {
-  font-size: 18px;
-}
-.dev_content_four,
-.dev_content_two {
-  font-size: 20px;
-}
-.sizeone {
-  font-size: 25px;
-}
-.dev_content_thr {
-  font-size: 50px;
-}
-.dev_content_five {
-  font-size: 40px;
-}
+
 .final_img {
   margin-top: 100px;
   opacity: 0;

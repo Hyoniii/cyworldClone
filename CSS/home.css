@@ -1,7 +1,7 @@
 
 @import "./profile.css";
 @import "./keyword.css";
-
+@import "./font.css";
 
 body {
   height: 100%;
@@ -403,6 +403,7 @@ background-position:-1px -1px, -1px -1px, -1px -1px, -1px -1px;
 .option_emtwo {
   color: orangered;
   font-size: 13px;
+  font-weight: bold;
 }
 .option-box_two {
   width: 100%;
