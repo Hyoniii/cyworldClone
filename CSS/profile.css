@@ -3,6 +3,13 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+.profile_title {
+  color: #92bfcd;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 10px 0 10px;
+  border-bottom: solid 2px #143b4481;
+}
 
 .center_sort {
   display: flex;
@@ -19,20 +26,25 @@
   width: 452px;
   height: 441px;
 }
+.profile_box > ul {
+  font-size: 16px;
+  font-weight: bold;
+}
 .profile_list {
-  list-style: none;
   padding-left: 0;
 }
 .profile_list > li > a {
   padding-left: 20px;
   text-decoration: none;
-  color: black;
 }
 .category_clicked {
   font-weight: bold;
+  color: #43a4bd;
 }
+
 .category_unclicked {
   font-weight: normal;
+  color: black;
 }
 .profile_main_location {
   width: 452px;
@@ -473,13 +485,13 @@
 .fourth_profile:hover > .fourth_profile_dental > .dental_before {
   -webkit-animation: focus-in-expand-fwd-out 5s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: focus-in-expand-fwd-out 5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  animation: focus-in-expand-fwd-out 6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation-delay: 2s;
 }
 .fourth_profile:hover > .fourth_profile_dental > .dental_carver {
-  animation: carver_left 4s linear forwards;
-  animation-delay: 3s;
+  animation: carver_left 5s linear forwards;
+  animation-delay: 2s;
 }
 @keyframes focus-in-expand-fwd-out {
   0% {
@@ -557,7 +569,7 @@
 .fourth_profile_dev:hover > .dental_textthr {
   -webkit-animation: text-flicker-out-glow 3s linear both;
   animation: text-flicker-out-glow 3s linear both;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 @keyframes swing-top-fwd {
   0% {
@@ -865,7 +877,7 @@
   50% {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
-    color: red;
+    font-weight: bold;
   }
   100% {
     -webkit-transform: scale(1);

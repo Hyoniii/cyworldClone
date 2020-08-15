@@ -11,7 +11,14 @@ body {
 }
 /*브라우저 바*/
 .background {
-  background-color: #9B9B9B;
+  background-color:#A4A4A4;
+  
+background-image: linear-gradient(#979797 1px, transparent 1px),
+linear-gradient(90deg, #979797 1px, transparent 1px),
+linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+background-size: 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+background-position:-1px -1px, -1px -1px, -1px -1px, -1px -1px;
   /*background-image: url("../grid2.png");*/
   
   height: 768px;
@@ -23,6 +30,28 @@ body {
 .windowbar {
   background-color: #005bf4;
   color: white;
+}
+.bar_bottom {
+  width: 1004px;
+  padding: 0 10px;
+  height: 30px;
+  background-color:#ECEBD7;
+  position: absolute;
+  bottom: 30px;
+  border-top: solid 4px #BEBEB2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.bottom_icon {
+  color: #3B9FD1;
+}
+.bar_bottom_right {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .bar_top {
   width: 100%;
@@ -275,13 +304,13 @@ body {
 }
 .nav_bar_main {
   position: absolute;
-  top:20px;
-  left: 692px;
+  top:55px;
+  left: 683px;
 }
 .nav_bar {
-  width: 55px;
-  height: 34px;
-  margin-bottom: 5px;
+  width: 62px;
+  height: 33px;
+  margin-bottom: 2px;
   border-radius: 5px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -291,15 +320,26 @@ body {
   /*transition: backgrond-color 0.1s forwards;*/
 }
 .unclicked {
-  
-  background-color: #368FB2
+  background-color: #3590BA;
+  border: solid 1px rgb(129, 127, 127);
+  border-left: none;
+}
+.unclicked>a {
+  text-shadow: 0 0 2px rgb(48, 48, 48);
+  color: white;
 }
 .clicked {
-  background-color: #f0f0f0;
+  border: solid 1px rgb(129, 127, 127);
+  border-left: none;
+  background-color: #ffffff;
+}
+.clicked>a {
+  text-shadow: 0 0 2px rgb(48, 48, 48);
+  color: white;
 }
 .nav_bar a{
   text-decoration: none;
-  color: rgb(68, 68, 68);
+  
 }
 /*
 .nav_bar:active{
@@ -338,7 +378,7 @@ body {
 .option {
   padding: 10px;
   
-  height: 180px;
+  height: 220px;
   margin-top: 30px;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -347,7 +387,8 @@ body {
 }
 .option-box_one {
   width: 150px;
-  height: 40px;
+  height: 50px;
+  padding-bottom: 10px;
   border-bottom: solid 2px #8f8f8f77;;
   /*box-shadow: 0px -7px 9px -3px rgba(97, 97, 97, 0.63) inset;*/
   display: flex;
@@ -359,10 +400,14 @@ body {
   color: orangered;
   font-weight: bold;
 }
+.option_emtwo {
+  color: orangered;
+  font-size: 13px;
+}
 .option-box_two {
   width: 100%;
   height: 50px;
-  padding-top: 5px;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -371,13 +416,13 @@ body {
 .box-two_colone {
   width: 90%;
  display: flex;
-  justify-content: space-between;
+ justify-content: space-between;
   align-items: center;
 }
 .box-two_coltwo {
   width: 90%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 .music {
@@ -397,7 +442,8 @@ body {
   border-radius: 10px;
   background-color: #F8F8F8;
   align-items: center;
-  color:#A7C3C4
+  color:#939393;
+  overflow: hidden;
   
 }
 .music-option{
