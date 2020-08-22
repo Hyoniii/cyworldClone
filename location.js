@@ -1,6 +1,6 @@
-const form = document.querySelector(".search");
-const input = form.querySelector("input");
-const btn = document.getElementById("js-searchBtn");
+const searchForm = document.querySelector(".search");
+const searchInput = searchForm.querySelector("input");
+const searchBtn = document.getElementById("js-searchBtn");
 
 function goGoogle(keyword) {
   window.location = `https://www.google.com/search?q=${keyword}`;
@@ -8,13 +8,13 @@ function goGoogle(keyword) {
 
 function handleSearch(event) {
   event.preventDefault();
-  const keyword = input.value;
+  const keyword = searchInput.value;
   //console.log(keyword);
   goGoogle(keyword);
 }
 
 function goSearch() {
-  btn.addEventListener("click", handleSearch);
+  searchBtn.addEventListener("click", handleSearch);
 }
 
 function init() {
