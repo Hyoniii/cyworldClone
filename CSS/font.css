@@ -6,7 +6,11 @@
   font-family: "Nanum Myeongjo";
   font-size: 50px;
 }
-
+.comment-list {
+  font-family: "Single Day", "Oswald";
+  font-size: 16px;
+  font-weight: lighter;
+}
 .content_etc {
   font-family: "Do Hyeon", "Oswald";
   font-size: 22px;

@@ -302,10 +302,17 @@ background-position:-1px -1px, -1px -1px, -1px -1px, -1px -1px;
 }
 .main_Rin_comment {
   width: 452px;
+  
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+.comment-list {
+  padding-left: 10px;
+  width: 432px;
+  list-style: none;
+}
+
 .nav_bar_main {
   position: absolute;
   top:55px;
