@@ -309,6 +309,8 @@ body {
 .comment-list {
   padding-left: 10px;
   width: 395px;
+  height: 130px;
+  overflow: auto;
   list-style: none;
 }
 .comment-list_lists {
