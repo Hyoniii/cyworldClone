@@ -1,18 +1,9 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html>
   <head>
-    <title>사이좋은 사람들 싸이월드</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="사이좋은 사람들 싸이월드 클론 혀니월드" />
+    <meta charset="utf-8" />
+    <title>짝맞추기</title>
     <link rel="stylesheet" href="./CSS/home.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Oswald:wght@400;600&family=Single+Day&family=Sunflower:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-    />
   </head>
   <body>
     <div class="background">
@@ -74,19 +65,17 @@
                   <span class="todayNum">53</span>
                   <span> | total : 1024</span>
                 </div>
-                <div class="inner_Lbox profile_box">
-                  <div class="profile_title">Profile</div>
-                  <ul class="profile_list">
-                    👩🏻내 소개
+                <div class="inner_Lbox board_box">
+                  <div class="board_title">게시판</div>
+                  <ul class="board_list">
+                    게시판
                     <li>
-                      <a class="li_one category_unclicked" href="./profile.html"
-                        >소개</a
+                      <a class="li_one category_clicked" href="./board.html"
+                        >카드게임</a
                       >
                     </li>
                     <li>
-                      <a class="li_two category_clicked" href="./keyword.html"
-                        >키워드</a
-                      >
+                      <a class="li_two category_unclicked" href="#">그림판</a>
                     </li>
                   </ul>
                 </div>
@@ -105,51 +94,8 @@
                     hyoniiiwood@gmail.com</a
                   >
                 </div>
-                <div class="inner_Rbox keyword-box">
-                  <div class="keyword-box_inner">
-                    <div class="keyword-guide">
-                      <span class="yes">- Yes</span>
-                      <span class="no">- No</span>
-                    </div>
-                    <div class="keyword_content">
-                      남자 <span class="red">여자</span><br />
-                      A형 <span class="red">B형</span> O형 AB형<br />
-                      <span class="red">RH+</span> RH-<br />
-                      키 150미만 150~156
-                      <span class="red">157~162</span> 163~169<br />
-                      170~175 176~180 181~185 186이상<br />
-                      목소리 크다 목소리 작다 웃음소리 특이<br />
-                      시력
-                      <span class="red">마이너스</span>
-                      0.1~0.5 0.6~1.0 1.1~1.5 2.0<br />
-                      <span class="red">귀찮음</span> 짜증을 잘낸다<br />
-                      수다 떠는 거 좋아한다
-                      <span class="red">쇼핑 좋아한다</span><br />
-                      감정에 충실한 편이다 남의 말을 잘 듣는다<br />
-                      반항적이다 내가 하기 싫은건 죽어도 안한다<br />
-                      한번 싫은 사람은 끝까지 싫다 노는거 좋아한다<br />
-                      까칠하다 내성적이다 적극적이다<br />
-                      좋아하는 사람한테만 잘해준다<br />
-                      잘 웃는다
-                      <span class="red">낙천적이다</span> 부정적이다<br />
-                      변덕 심하다 욱하는 성격이다 화나도 잘 참는다<br />
-                      호들갑 잘 떠는 편이다 <span class="red">낯가림</span
-                      ><br />
-                      눈치 백단이다 눈치라고는 눈곱만큼도 없다<br />
-                      눈물이 많은 편이다 눈물 잘 참는다<br />
-                      <span class="red">쑥스럼</span><br />
-                      <span class="red">야식 간식</span> 낮잠 밤잠<br />
-                      <span class="red">운동</span><br />
-                      봄 여름 <span class="red">가을 겨울</span> 바다
-                      <spna class="red">산</spna><br />
-                      메신저 문자 전화 생머리 곱슬머리 <br />
-                      파마 염색 머리띠 핀<br />
-                      어중간한 생머리<br />
-                      <spna class="red">단발머리</spna> 올림머리 양갈래<br />
-                      PC방 오락실 노래방 만화방<br />
-                      <spna class="red">많이 먹어서 체해본 적</spna> <br />
-                    </div>
-                  </div>
+                <div class="inner_Rbox card-box">
+                  <div id="wrapper"></div>
                 </div>
               </div>
             </div>
@@ -159,10 +105,10 @@
               <li class="nav_bar_home nav_bar unclicked">
                 <a href="./home.html">홈</a>
               </li>
-              <li class="nav_bar_profile nav_bar clicked">
+              <li class="nav_bar_profile nav_bar unclicked">
                 <a href="./profile.html">프로필</a>
               </li>
-              <li class="nav_bar_profile nav_bar unclicked">
+              <li class="nav_bar_profile nav_bar clicked">
                 <a href="./board.html">게시판</a>
               </li>
             </ul>
@@ -228,6 +174,8 @@
         </div>
       </div>
     </div>
-    <script src="./location.js"></script>
+    <script src="./card.js"></script>
   </body>
+
+  <body></body>
 </html>
