@@ -14,7 +14,7 @@ var 색깔들 = [
   "pink",
   "pink",
 ];
-var 색깔후보 = 색깔들.slice();
+var 색깔후보 = 색깔들.slice(); //!!
 var 색깔 = [];
 var 클릭플래그 = true;
 var 클릭카드 = [];
